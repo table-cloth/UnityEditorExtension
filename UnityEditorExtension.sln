@@ -1,6 +1,8 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2008
 
+Project("{51899D90-EC0C-B5A9-05E0-B15CB14DBE46}") = "UnityEditorExtension", "Assembly-CSharp.csproj", "{08925167-2C04-C388-9CDB-CE1140E4C037}"
+EndProject
 Project("{51899D90-EC0C-B5A9-05E0-B15CB14DBE46}") = "UnityEditorExtension", "Assembly-CSharp-Editor.csproj", "{C993D6D5-A338-C178-F2F8-C6F5B8042EED}"
 EndProject
 Global
@@ -9,6 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{08925167-2C04-C388-9CDB-CE1140E4C037}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08925167-2C04-C388-9CDB-CE1140E4C037}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08925167-2C04-C388-9CDB-CE1140E4C037}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08925167-2C04-C388-9CDB-CE1140E4C037}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C993D6D5-A338-C178-F2F8-C6F5B8042EED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C993D6D5-A338-C178-F2F8-C6F5B8042EED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C993D6D5-A338-C178-F2F8-C6F5B8042EED}.Release|Any CPU.ActiveCfg = Release|Any CPU
