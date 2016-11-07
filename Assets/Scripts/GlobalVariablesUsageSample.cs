@@ -13,6 +13,7 @@ public class GlobalVariablesUsageSample : MonoBehaviour {
 	{
 		GlobalVariables globalVariables =
 			Resources.Load(GlobalVariables.CLASS_NAME) as GlobalVariables;
+		return globalVariables.variables;
 	}
 
 	/// <summary>
@@ -28,5 +29,9 @@ public class GlobalVariablesUsageSample : MonoBehaviour {
 		int value = variables.numberA;
 		value = variables.numberB;
 		string text = variables.textAreaA;
+
+		// use variable just to remove warning log
+		value += 0;
+		text += "";
 	}
 }
