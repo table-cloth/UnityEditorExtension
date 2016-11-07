@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// Sample for color related extensions
+/// </summary>
 public class InspectorExtendColorSample : MonoBehaviour
 {
 	[ColorUsage(false)]

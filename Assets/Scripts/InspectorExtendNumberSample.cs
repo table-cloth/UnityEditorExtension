@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// Sample for number related extensions
+/// </summary>
 public class InspectorExtendNumberSample : MonoBehaviour
 {
 	/// <summary>

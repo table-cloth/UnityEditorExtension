@@ -2,6 +2,9 @@
 using UnityEngine;
 using System.Linq;
 
+/// <summary>
+/// Hierarchy view extensions
+/// </summary>
 public class HierarchyExt : CommonViewExt {
 
 	/// <summary>

@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// Sample for text related extensions
+/// </summary>
 public class InspectorExtendTextSample : MonoBehaviour
 {
 	private const string longTextSample = "This is sample of some random long text. This does not have any meaning, but is needed to see textArea and multiLine in the inspector view. But actually, I have no I idea of what to write, so I will fill in some random stuff only. Sorry for the people who has read all this, this has no meaning at all.";

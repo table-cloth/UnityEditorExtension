@@ -2,9 +2,10 @@
 using UnityEngine;
 using System.IO;
 
+/// <summary>
+/// Project view extentios
+/// </summary>
 public class ProjectViewExt : CommonViewExt {
-
-
 
 	/// <summary>
 	/// Initialize this instance.

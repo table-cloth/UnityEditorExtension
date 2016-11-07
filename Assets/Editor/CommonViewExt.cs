@@ -1,6 +1,9 @@
 ﻿using UnityEditor;
 using UnityEngine;
 
+/// <summary>
+/// Common view extensions for Hierarchy & Project
+/// </summary>
 public abstract class CommonViewExt {
 
 	// const color
