@@ -29,4 +29,16 @@ public class InspectorExtendContextMenuSample : MonoBehaviour {
 	{
 		number1 = 0;
 	}
+
+	/// <summary>
+	/// Gets the random number.
+	/// </summary>
+	/// <returns>The random number.</returns>
+	/// <param name="min">Minimum.</param>
+	/// <param name="max">Max.</param>
+	int GetRandomNumber(int min, int max)
+	{
+		return Random.Range (min, max);
+	}
+		
 }
