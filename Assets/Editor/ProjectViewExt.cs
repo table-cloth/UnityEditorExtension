@@ -32,10 +32,10 @@ public class ProjectViewExt : CommonViewExt {
 		string assetPath = AssetDatabase.GUIDToAssetPath (guid);
 		string extension = Path.GetExtension (assetPath);
 
-		// Do nothing with ones with no extension info
+        // Show "--" when dir or error
 		if (string.IsNullOrEmpty (extension))
 		{
-			return;
+            extension = "--";
 		}
 
 		GUIStyle label = EditorStyles.label;

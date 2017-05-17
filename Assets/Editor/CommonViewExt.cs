@@ -7,9 +7,10 @@ using UnityEngine;
 public abstract class CommonViewExt {
 
 	// const color
-	protected static readonly Color EXTENSION_TEXT_COLOR = new Color (0.0f, 0.0f, 0.0f, 0.5f); 
+	protected static readonly Color EXTENSION_TEXT_COLOR = new Color (1.0f, 1.0f, 1.0f, 0.75f); 
 	protected static readonly Color ALERT_WARNING_TEXT_COLOR = new Color (0.0f, 0.0f, 0.0f, 0.75f); 
-	protected static readonly Color ODD_LINE_BG_COLOR = new Color (0.0f, 0.0f, 0.0f, 0.1f);
+    protected static readonly Color ODD_LINE_BG_COLOR = new Color (1.0f, 1.0f, 1.0f, 1.0f);
+    protected static readonly Color EVEN_LINE_BG_COLOR = new Color (1.0f, 1.0f, 1.0f, 0.5f);
 	protected static readonly Color COMPONENT_COLOR_DISABLED = new Color(1.0f, 1.0f, 1.0f, 0.25f);
 	protected static readonly Color COMPONENT_COLOR_ENABLED = new Color(1.0f, 1.0f, 1.0f, 1.0f);
 
@@ -40,17 +41,16 @@ public abstract class CommonViewExt {
 	{
 		int index = (int)(selectionRect.y - 4) / 16;
 		// only change color if odd line number
-		if (index % 2 == 0)
-		{
-			return;
-		}
+        Color lineColor = index % 2 == 0
+            ? EVEN_LINE_BG_COLOR
+            : ODD_LINE_BG_COLOR;
 
 		Rect pos = selectionRect;
 		pos.x = 0;
 		pos.xMax = selectionRect.xMax;
 
 		Color color = GUI.color;
-		GUI.color = ODD_LINE_BG_COLOR;
+        GUI.color = lineColor;
 		GUI.Box (pos, string.Empty);
 		GUI.color = color;
 
